@@ -1,0 +1,100 @@
+Online Canteen Food Ordering System
+
+Name: Bharath gowda kb 
+USN:NB25CSE064
+Subject: Software Engineering
+
+1. Introduction
+
+A mobile application is software that runs on smartphones. A web application can be accessed through a web browser. A Progressive Web Application (PWA) combines features of both mobile and web applications.
+
+An online canteen food ordering system allows students to view food items, order food, make payments and receive notifications when their orders are ready.
+
+2. Problem Analysis
+
+In a college canteen, students usually stand in long queues to order food. During break time, the canteen becomes crowded.
+
+The main problems are:
+
+1. Long waiting time.
+2. Difficulty in checking food availability.
+3. Manual payment process.
+4. Food ordering takes more time.
+5. Students may miss their break time.
+
+To solve these problems, an online canteen ordering system is proposed.
+
+3. Comparison of Mobile, Web and PWA
+
+Mobile Application:
+
+- Installed on smartphones.
+- Provides a good user experience.
+- Requires installation.
+
+Web Application:
+
+- Accessed through a web browser.
+- No installation is required.
+- Requires an internet connection.
+
+Progressive Web Application (PWA):
+
+- Works like a mobile application.
+- Can be accessed through a browser.
+- Can be added to the home screen.
+- Supports some offline features.
+
+4. Proposed Solution
+
+A Progressive Web Application (PWA) is the most suitable solution for the college canteen.
+
+Students can open the application using their mobile phones without downloading it from an app store. They can view the menu, select food items, place orders and make online payments.
+
+The canteen staff can receive orders and prepare food before students arrive.
+
+5. Major Functionalities
+
+1. Menu Display: Students can view available food items and prices.
+2. Online Ordering: Students can select food items and place orders.
+3. Online Payment: Students can pay using UPI or other online payment methods.
+4. Order Notifications: Students receive notifications when their food is ready.
+5. Order Tracking: Students can check their order status.
+
+6. Development Challenges
+
+1. Internet Connection: The application may not work properly with poor internet connectivity.
+2. Payment Security: Online payments must be protected from fraud.
+3. System Performance: The application should handle many students ordering at the same time.
+
+7. Application Workflow Diagram
+
+Student Login
+|
+↓
+View Food Menu
+|
+↓
+Select Food Items
+|
+↓
+Place Order
+|
+↓
+Make Payment
+|
+↓
+Canteen Receives Order
+|
+↓
+Food Preparation
+|
+↓
+Notification Sent to Student
+|
+↓
+Collect Food
+
+8. Conclusion
+
+The online canteen food ordering system using PWA is a useful solution for college students. It reduces waiting time, makes ordering easier and saves time. It also helps canteen staff manage orders efficiently. Therefore, PWA is a suitable choice for developing an online canteen ordering system.
