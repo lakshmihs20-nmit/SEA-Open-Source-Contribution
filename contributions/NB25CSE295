@@ -1,0 +1,147 @@
+# SaaS-Based College Attendance Management System
+
+**Student Name:** Ranjit Yadav  
+**USN:** NB25CSE295  
+**Assigned Case Study:** Question 1 – SaaS and Cloud-Based Applications  
+**GitHub filename required by the assignment:** `USN_SaaS_Attendance_System.md`
+
+---
+
+## 1. Introduction to SaaS
+
+Software as a Service (SaaS) is a cloud computing model in which software is hosted by a service provider and accessed by users through the internet. Users do not need to install and maintain the complete application on every computer. They can use the software through a web browser or mobile application.
+
+Examples of SaaS include Google Workspace, Microsoft 365, and online learning platforms.
+
+In a college attendance system, SaaS can provide a common online platform where faculty members record attendance and students view their attendance status from anywhere using an internet connection.
+
+## 2. Problem Analysis
+
+The college currently maintains attendance using paper registers and Excel sheets. This approach can create several problems:
+
+- Attendance records may be lost, damaged, or entered incorrectly.
+- Preparing attendance reports manually takes time.
+- Students may not know their attendance percentage until a report is shared.
+- Faculty members may find it difficult to access records when they are away from campus.
+- Maintaining and combining records from different subjects and classes can be difficult.
+
+The college therefore needs a secure, centralized, cloud-based attendance management system.
+
+## 3. Proposed SaaS Attendance Management System
+
+The proposed system is a cloud-hosted application. Faculty members log in using their accounts, select a class and subject, and mark students as present or absent. The system stores the information in a centralized cloud database.
+
+Students can log in to view their attendance percentage and subject-wise attendance. Administrators can manage student and faculty accounts, classes, subjects, and reports.
+
+Because the application is delivered as SaaS, the college can access it through a browser without installing and maintaining separate software on every device.
+
+### 3.1 Essential Features
+
+1. **Secure login and role-based access:** Separate access for administrators, faculty members, and students.
+2. **Online attendance marking:** Faculty can select a class, subject, date, and period and mark students present or absent.
+3. **Attendance reports:** The system automatically calculates attendance percentages and generates daily, monthly, and subject-wise reports.
+4. **Student attendance dashboard:** Students can view their attendance records and identify subjects where attendance is low.
+5. **Centralized cloud database:** Attendance information is stored in one central location and can be accessed by authorized users.
+6. **Notifications:** The system can notify students when attendance is updated or when their attendance falls below the college's required threshold.
+
+## 4. How Cloud-Based Access Benefits Faculty and Students
+
+### Benefits
+
+1. **Access from anywhere:** Faculty members can access attendance records from campus, home, or another location using an internet-connected device. Students can also check their attendance without visiting the office.
+2. **Time saving and fewer manual errors:** Automatic percentage calculation and report generation reduce repetitive manual work and calculation mistakes.
+3. **Centralized and updated information:** Authorized users see information from the same database, making it easier to maintain consistent records and monitor attendance.
+
+## 5. Possible Challenges
+
+1. **Internet dependency:** Users may be unable to access the system during an internet outage or when network connectivity is poor. The college should provide reliable connectivity and consider a controlled temporary offline procedure for attendance capture.
+2. **Data security and privacy:** Attendance records contain student information. Unauthorized access, weak passwords, or data breaches may expose this information. The system should use encrypted connections, role-based permissions, strong authentication, regular backups, and secure access controls.
+
+Other practical concerns may include subscription costs, user training, and migrating existing attendance records into the new system.
+
+## 6. Simple System Architecture Diagram
+
+```text
++---------------------+       +----------------------+
+| Faculty Web/Mobile  |       | Student Web/Mobile   |
+| - Login             |       | - Login              |
+| - Mark attendance   |       | - View attendance    |
+| - View reports      |       | - View percentage    |
++----------+----------+       +-----------+----------+
+           |                              |
+           +--------------+---------------+
+                          |
+                    Internet / HTTPS
+                          |
+                          v
+              +--------------------------+
+              | Cloud SaaS Application   |
+              | - Authentication        |
+              | - Attendance processing |
+              | - Report generation     |
+              | - Notifications         |
+              +------------+-------------+
+                           |
+                           v
+              +--------------------------+
+              | Cloud Database           |
+              | - Student details        |
+              | - Faculty details        |
+              | - Classes and subjects   |
+              | - Attendance records     |
+              +--------------------------+
+                           |
+                           v
+              +--------------------------+
+              | Backup and Security      |
+              | - Access control         |
+              | - Encryption             |
+              | - Regular backups        |
+              +--------------------------+
+```
+
+### 6.1 Working Flow
+
+1. The faculty member opens the attendance application and logs in.
+2. The faculty member selects the class, subject, date, and period.
+3. The faculty member marks each student as present or absent.
+4. The SaaS application validates the information and saves it in the cloud database.
+5. The system calculates attendance percentages and updates reports.
+6. Students log in and view their latest attendance information.
+7. The administrator manages users and monitors reports.
+
+## 7. Example Scenario
+
+Suppose a college has 500 students and 25 faculty members. Earlier, faculty members used paper registers and Excel sheets to maintain attendance. Preparing a monthly report required collecting and checking multiple files.
+
+After introducing the SaaS attendance system, a faculty member can log in, select “CSE – Section A” and “Software Engineering,” and mark attendance for the current class. The system stores the record online and updates each student's attendance percentage.
+
+For example, if a student attended 36 out of 40 classes:
+
+**Attendance percentage = (Classes attended / Total classes) × 100**
+
+**Attendance percentage = (36 / 40) × 100 = 90%**
+
+The student can view the 90% attendance percentage on the dashboard, while authorized faculty members can view the corresponding report.
+
+## 8. Expected Outcomes
+
+- Attendance recording and report preparation become faster.
+- Students can monitor their attendance regularly.
+- Faculty members can access authorized records from different locations.
+- Centralized records make attendance information easier to manage.
+- Automated calculations reduce manual calculation errors.
+
+## 9. Conclusion
+
+A SaaS-based college attendance management system is a suitable solution for replacing manual registers and separate Excel sheets. It provides online attendance marking, centralized cloud storage, automatic report generation, and access for faculty members and students from different locations. Although internet dependency and data security are important challenges, reliable connectivity, encryption, access control, backups, and user training can reduce these risks. Overall, the proposed system can make college attendance management more efficient, accessible, and organized.
+
+---
+
+## GitHub Contribution Details
+
+**Required file path inside the repository:** `contributions/USN_SaaS_Attendance_System.md`  
+**Suggested commit message:** `Added SaaS Attendance System contribution`  
+**Suggested Pull Request title:** `Student Contribution – SaaS Attendance System`
+
+**Note:** The assignment specifies the filename format `USN_SaaS_Attendance_System.md`. Replace `USN` with your actual USN when creating the file. For this submission, use `NB25CSE295_SaaS_Attendance_System.md` or the exact filename format instructed by your faculty.
