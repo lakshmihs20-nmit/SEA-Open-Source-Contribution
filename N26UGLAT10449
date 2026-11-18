@@ -1,0 +1,71 @@
+CASE STUDY: CLOUD-BASED ATTENDANCE MANAGEMENT SYSTEM USING SAAS
+
+Name: Akash P Naidu
+Branch: Computer Science and Engineering
+Year: 2nd Year
+Subject: Software Engineering and Open Source Contribution
+
+1. Introduction
+
+Software as a Service (SaaS) is a cloud computing model that allows users to access software applications through the internet without installing them on their computers.
+
+A cloud-based attendance management system helps colleges maintain student attendance digitally. Faculty members can mark attendance, and students can check their attendance records from anywhere.
+
+2. Problem Analysis
+
+Currently, many colleges maintain attendance using manual registers and Excel sheets.
+
+The major problems are:
+
+- Manual attendance takes more time.
+- Maintaining records is difficult.
+- Errors may occur while calculating attendance.
+- Students cannot easily check their attendance.
+- Reports are difficult to generate manually.
+
+Therefore, a cloud-based attendance management system is required.
+
+3. Proposed Solution
+
+The proposed system uses SaaS technology to store and manage attendance records on cloud servers.
+
+Faculty members can log in using their accounts and mark attendance online. Students can log in to view their attendance percentage and subject-wise records.
+
+Essential Features
+
+1. Login System: Secure login for faculty and students.
+2. Online Attendance: Faculty can mark attendance digitally.
+3. Attendance Reports: Automatically generates attendance reports.
+4. Student Dashboard: Students can view their attendance percentage.
+5. Cloud Storage: Attendance data is stored securely online.
+
+4. Benefits of Cloud-Based Applications
+
+1. Accessibility: Faculty and students can access the system from anywhere using the internet.
+2. Time Saving: Digital attendance reduces manual work.
+3. Data Management: Records can be stored and retrieved easily.
+
+5. Challenges
+
+1. Internet Dependency: The system requires an internet connection to access cloud services.
+2. Security Issues: Student information must be protected from unauthorized access.
+
+6. Simple Architecture Diagram
+
+Faculty / Students
+|
+v
+Web Application
+|
+v
+Cloud Server (SaaS)
+|
+v
+Database
+|
+v
+Attendance Records
+
+7. Conclusion
+
+The SaaS-based attendance management system provides an efficient and modern solution for colleges. It reduces paperwork, saves time, improves accuracy, and allows faculty and students to access attendance information from anywhere. Therefore, implementing this system can improve the overall attendance management process.
