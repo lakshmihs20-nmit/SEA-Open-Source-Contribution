@@ -1,0 +1,171 @@
+Case Study 3: DevOps Practices and CI/CD Pipelines
+
+DevOps and CI/CD Pipeline for Online Shopping Application
+
+1. Title and Student Details
+
+- Name: Ayush kumar singh
+- USN: NB25CSE059
+- Assigned Case Study: DevOps Practices and CI/CD Pipelines
+- Project: Online Shopping Application
+
+2. Introduction
+
+DevOps is a software engineering approach that combines Development (Dev) and Operations (Ops) teams to improve software development, testing and deployment.
+
+CI/CD stands for Continuous Integration and Continuous Delivery/Deployment.
+
+Continuous Integration (CI) involves regularly combining code changes from different developers and automatically testing them.
+
+Continuous Delivery/Deployment (CD) automates the process of preparing and releasing software updates.
+
+DevOps and CI/CD help software companies deliver software faster, improve quality and reduce manual work.
+
+3. Problem Analysis
+
+A software company develops an online shopping application and frequently updates it to introduce new features and fix bugs.
+
+However, manual testing and deployment create several problems:
+
+1. Manual testing consumes a lot of time.
+2. Frequent updates may introduce software errors.
+3. Manual deployment increases the chances of human mistakes.
+4. Different development teams may face integration problems.
+5. Releasing new features becomes slow and difficult.
+
+Therefore, the company needs an automated software development and deployment process using DevOps practices and CI/CD pipelines.
+
+4. Proposed Solution
+
+The proposed solution is to implement DevOps practices with a CI/CD pipeline.
+
+The pipeline automatically builds, tests and deploys the online shopping application whenever developers make changes to the source code.
+
+A. Meaning of CI and CD
+
+1. Continuous Integration (CI)
+
+Continuous Integration is the process of frequently combining code changes into a shared repository.
+
+Whenever a developer submits new code, automated tools build and test the application to identify errors.
+
+2. Continuous Delivery/Deployment (CD)
+
+Continuous Delivery automatically prepares tested software for release.
+
+Continuous Deployment goes one step further by automatically releasing successfully tested changes into the production environment.
+
+B. CI/CD Pipeline Stages
+
+1. Code Development
+
+Developers write code and implement new features or fix existing bugs.
+
+2. Code Repository
+
+Developers upload their code to a shared repository using Git and GitHub.
+
+3. Build
+
+The CI/CD tool automatically compiles the code and creates the application build.
+
+4. Testing
+
+Automated tests are performed to identify errors and verify that the application works correctly.
+
+5. Deployment
+
+After successful testing, the application is deployed to the staging or production environment according to the deployment process.
+
+6. Monitoring
+
+The application is continuously monitored to identify performance issues and errors.
+
+C. Explanation of Build, Test and Deployment
+
+- Build: Converts source code into an executable application or deployable package.
+- Test: Checks whether the application works correctly and identifies bugs.
+- Deployment: Releases the tested application so users can access the latest version.
+
+D. CI/CD Pipeline Diagram
+
+       Developer Writes Code
+                |
+                v
+        GitHub Repository
+                |
+                v
+       Continuous Integration
+                |
+                v
+          Build Process
+                |
+                v
+        Automated Testing
+                |
+                v
+        Tests Successful?
+             /     \
+           No       Yes
+           |         |
+           v         v
+      Fix Errors   Deployment
+           |         |
+           |         v
+           |     Production
+           |         |
+           |         v
+           |      Monitoring
+           |         |
+           v         v
+       New Code   End
+
+5. Benefits and Challenges
+
+A. Benefits of Automation
+
+1. Faster Software Delivery
+
+Automated building, testing and deployment reduce the time required to release new features and bug fixes.
+
+2. Improved Software Quality
+
+Automated testing helps identify errors early and improves application reliability.
+
+3. Reduced Human Errors
+
+Automation reduces mistakes during manual testing and deployment processes.
+
+B. Challenges
+
+1. Initial Setup Complexity
+
+Setting up CI/CD pipelines, automation tools and deployment environments requires technical knowledge and initial effort.
+
+2. Tool Integration
+
+Integrating different development, testing and deployment tools can be challenging and may require additional configuration.
+
+3. Continuous Maintenance
+
+CI/CD pipelines need regular monitoring and maintenance to ensure that automated processes work correctly.
+
+6. Conclusion
+
+DevOps practices and CI/CD pipelines provide an effective solution for automating the development and deployment of the online shopping application.
+
+By automating code integration, building, testing and deployment, the company can release updates faster and reduce human errors.
+
+It also improves software quality, team collaboration and application reliability.
+
+Therefore, implementing DevOps and CI/CD practices helps the company develop and maintain its online shopping application more efficiently.
+
+---
+
+GitHub Submission Details
+
+GitHub Filename: "USN_DevOps_CICD.md"
+
+Commit Message: "Added DevOps CI CD Pipeline contribution"
+
+Pull Request Title: "Student Contribution – DevOps CI/CD Pipeline"
