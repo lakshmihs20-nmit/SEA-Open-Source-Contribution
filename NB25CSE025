@@ -1,0 +1,92 @@
+# Case Study 1: SaaS and Cloud-Based Applications – Attendance Management System
+
+**Name:** Akshaya R  
+**Department:** Computer Science and Engineering  
+**Semester:** 3rd Semester  
+**Subject:** Software Engineering
+
+## 1. Introduction
+
+Many educational institutions still maintain student attendance records using paper registers and Excel sheets. This process can be time-consuming and may lead to errors or loss of data.
+
+A Software as a Service (SaaS) based Attendance Management System provides a cloud-based solution where teachers can record, manage and monitor student attendance from anywhere using the internet.
+
+## 2. Problem Statement
+
+Traditional attendance management systems have several limitations:
+
+- Manual attendance recording consumes time.
+- Maintaining paper records is difficult.
+- Calculating attendance percentages manually can cause errors.
+- Accessing attendance records from different locations is difficult.
+- Managing large amounts of student data becomes complicated.
+
+## 3. Proposed Solution
+
+A cloud-based Attendance Management System can solve these problems by storing attendance records securely on cloud servers.
+
+The system allows:
+
+- Teachers to log in and mark student attendance.
+- Students to view their attendance records.
+- Administrators to manage student and faculty information.
+- Automatic calculation of attendance percentages.
+- Access to attendance information from anywhere.
+
+## 4. SaaS Architecture
+
+The system follows a cloud-based architecture.
+
+**Main Components:**
+
+1. **User Interface:** Allows teachers, students and administrators to interact with the application.
+2. **Application Server:** Processes attendance records and user requests.
+3. **Cloud Database:** Stores student details and attendance records.
+4. **Internet:** Connects users to the cloud-based application.
+
+### Architecture Diagram
+
+```text
+       Teachers / Students
+                |
+                |
+          Web Application
+                |
+                |
+        Application Server
+                |
+                |
+          Cloud Database
+                |
+                |
+       Attendance Records
+```
+
+## 5. Benefits of Using SaaS
+
+- **Accessibility:** Users can access the system from anywhere.
+- **Cost Effective:** No need for expensive local infrastructure.
+- **Scalability:** The system can support more students and institutions.
+- **Automatic Updates:** Software updates can be managed centrally.
+- **Data Management:** Attendance records are stored digitally and are easier to manage.
+
+## 6. Challenges
+
+- Requires a stable internet connection.
+- Data privacy and security must be maintained.
+- Server downtime may temporarily affect access.
+- Users may require training to understand the application.
+
+## 7. Expected Results
+
+The proposed system helps educational institutions manage attendance efficiently.
+
+It reduces manual work, improves accuracy, provides easy access to attendance records and saves time for teachers and administrators.
+
+## 8. Conclusion
+
+A SaaS-based Attendance Management System is an effective solution for modern educational institutions. It replaces traditional manual attendance methods with a digital and cloud-based approach. By improving accessibility, reducing errors and simplifying record management, it makes attendance tracking easier and more efficient.
+
+---
+
+**Technologies/Concepts:** SaaS, Cloud Computing, Web Applications, Cloud Database and Client-Server Architecture.
