@@ -1,0 +1,37 @@
+# Critical Path Method (CPM) in Software Project Management
+
+## Overview
+In Software Project Management, the **Critical Path Method (CPM)** is a deterministic scheduling technique used to model project activities, define task dependencies, and determine the longest sequence of dependent activities from project initiation to closure. Because delays along this sequence directly push back the final delivery date, the critical path defines the **minimum total duration** required to complete a project.
+
+---
+
+## Core Concepts
+
+| Term | Definition | Practical Example (Online Food Delivery System) |
+| :--- | :--- | :--- |
+| **Activity (Task)** | A discrete unit of work with an estimated duration and assigned resource. | *System Design* (2 weeks), *Integration* (1 week) |
+| **Predecessor / Dependency** | A logical constraint specifying which task(s) must finish before another can begin. | *Front-End* and *Back-End Development* must finish before *Integration* |
+| **Milestone** | A zero-duration checkpoint (`0d`) marking a major phase gate, shown as a diamond (`♦`) on a Gantt chart. | *Requirements Completed* (`0d`), *Project Deployed* (`0d`) |
+| **Float (Slack)** | The maximum time a task can be delayed without delaying subsequent tasks or the project finish date. | Non-critical parallel tasks may have positive float; critical tasks have `0` float |
+| **Critical Path** | The longest continuous chain of dependent tasks with zero float across the project network. | `Initiation → Requirements → Analysis → Design → Development → Integration → Testing → UAT → Bug Fixing → Deployment → Closure` |
+
+---
+
+## Step-by-Step Working Mechanism
+
+1. **Work Breakdown & Estimation:** Decompose the project into individual tasks and estimate the duration of each task (e.g., in days or weeks).
+2. **Dependency Mapping:** Link tasks using predecessors to represent sequential and parallel workflows.
+3. **Forward Pass (Earliest Times):** Calculate the **Earliest Start (ES)** and **Earliest Finish (EF)** for every task moving from start to finish:
+   $$\text{EF} = \text{ES} + \text{Duration}$$
+4. **Backward Pass (Latest Times):** Calculate the **Latest Start (LS)** and **Latest Finish (LF)** moving backward from the project completion date:
+   $$\text{LS} = \text{LF} - \text{Duration}$$
+5. **Float Calculation & Critical Path Identification:** Compute total float for each task:
+   $$\text{Float} = \text{LS} - \text{ES} = \text{LF} - \text{EF}$$
+   Tasks with **$\text{Float} = 0$** form the **Critical Path**.
+
+---
+
+## Significance in Project Planning
+* **Schedule Visibility:** Establishes a realistic baseline timeline grounded in task dependencies.
+* **Resource Prioritization:** Helps project managers allocate key personnel (e.g., developers, QA testers, DevOps engineers) to zero-float tasks first.
+* **Risk & Bottleneck Control:** Highlights tasks where schedule slippage cannot be absorbed, enabling early intervention or task parallelization.
