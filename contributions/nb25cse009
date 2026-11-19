@@ -1,0 +1,183 @@
+# DevOps Practices and CI/CD Pipeline for an Online Shopping Application
+
+**Student Name:** Abhishek Choudary  
+**USN:** NB25CSE009  
+**Assigned Case Study:** Question 3 – DevOps Practices and CI/CD Pipelines  
+**GitHub filename format in the assignment:** `USN_DevOps_CICD.md`
+
+---
+
+## 1. Introduction to DevOps
+
+DevOps is a combination of Development (Dev) and Operations (Ops) practices. It brings software developers and IT operations teams together to build, test, release, and maintain software more efficiently.
+
+DevOps encourages communication, collaboration, automation, continuous feedback, and frequent software delivery. Instead of developers completing the software and handing it over to the operations team at the end, both teams work together throughout the software development process.
+
+For an online shopping application, DevOps helps the company release new features, fix bugs, and improve the application in a faster and more reliable way.
+
+## 2. Problem Analysis
+
+The software company develops an online shopping application. Developers frequently update the application to introduce new features and fix bugs. However, manual testing and deployment are causing delays and errors.
+
+The main problems are:
+- Manual testing takes a long time whenever developers change the application.
+- Repeated manual deployment steps may cause configuration or human errors.
+- New features and bug fixes take longer to reach customers.
+- A change in one part of the application may create problems in another part.
+- Developers and operations staff may face communication gaps during releases.
+
+The company needs an automated process to build, test, and deploy changes consistently.
+
+## 3. Proposed Solution: DevOps with a CI/CD Pipeline
+
+The company should adopt DevOps practices and implement a Continuous Integration and Continuous Delivery/Deployment (CI/CD) pipeline.
+
+Developers store application code in a shared version-control repository such as GitHub. Whenever a developer pushes code or creates a pull request, the CI/CD tool automatically starts a pipeline. The pipeline builds the application, runs automated tests, and reports whether the changes pass.
+
+After successful checks, the application can be delivered to a staging environment for further verification. Once approved, the release can be deployed to the production environment. If the company chooses continuous deployment, every change that passes all required checks can be deployed automatically.
+
+### 3.1 Continuous Integration (CI)
+
+Continuous Integration is the practice of frequently merging code changes into a shared repository. Each change is automatically built and tested so that errors can be detected early.
+
+**Example:** A developer adds a discount coupon feature to the shopping application and pushes the code to GitHub. The CI pipeline automatically builds the application and runs unit tests to check whether the new feature works and whether existing functions still pass their tests.
+
+### 3.2 Continuous Delivery and Continuous Deployment (CD)
+
+- **Continuous Delivery:** After automated build and test stages, the application is kept ready for release. Deployment to production usually requires a manual approval or release decision.
+- **Continuous Deployment:** Every code change that successfully passes the required pipeline checks is automatically deployed to production without a separate manual release approval.
+
+Both approaches reduce repetitive work and help deliver software updates more reliably.
+
+## 4. CI/CD Pipeline Stages
+
+1. **Plan:** The team identifies requirements, new features, and bugs to be fixed.
+2. **Code:** Developers write or modify the application code.
+3. **Version control:** Developers commit and push changes to a shared Git repository.
+4. **Build:** The CI tool compiles or packages the application and checks that it can be built successfully.
+5. **Test:** Automated unit, integration, and other suitable tests check the application for errors.
+6. **Release / staging:** A successful build is packaged and deployed to a staging environment for final verification.
+7. **Deploy:** The approved release is deployed to the production environment, or automatically deployed when continuous deployment is used.
+8. **Monitor and feedback:** The team monitors application performance, errors, and user feedback. Issues are used to plan the next improvement.
+
+## 5. Explanation of Build, Test, and Deployment
+
+### 5.1 Build
+
+The build stage takes the source code and creates a runnable application package. It may install required dependencies, compile code, and prepare configuration files. If the build fails, the pipeline reports the error and stops later stages.
+
+### 5.2 Test
+
+The test stage runs automated checks to identify defects before release.
+
+- **Unit testing:** Checks individual functions or components, such as calculating a product discount.
+- **Integration testing:** Checks whether connected components work together, such as the shopping cart and order service.
+- **Regression testing:** Checks that existing functions, such as login and checkout, still work after new changes.
+
+### 5.3 Deployment
+
+The deployment stage transfers the verified application to an environment where it can be used.
+
+- **Staging deployment:** The application is deployed to a test-like environment for final checks.
+- **Production deployment:** The approved version is released to actual customers.
+- **Rollback:** If a deployment causes serious problems, the team can restore a previously working version using a prepared rollback process.
+
+## 6. CI/CD Pipeline Diagram
+
+```text
++----------------------+
+| Plan Requirements    |
++----------+-----------+
+           |
+           v
++----------------------+
+| Developer Writes Code|
++----------+-----------+
+           |
+           v
++----------------------+
+| Git Repository       |
+| Commit / Push / PR   |
++----------+-----------+
+           |
+           v
++----------------------+
+| CI Pipeline          |
+| Automatic Build      |
++----------+-----------+
+           |
+           v
++----------------------+
+| Automated Testing    |
+| Unit / Integration   |
+| Regression           |
++----------+-----------+
+           |
+           v
++----------------------+
+| Release to Staging   |
++----------+-----------+
+           |
+           v
++----------------------+
+| Approval / Checks    |
++----------+-----------+
+           |
+           v
++----------------------+
+| Production Deployment|
++----------+-----------+
+           |
+           v
++----------------------+
+| Monitor & Feedback   |
++----------+-----------+
+           |
+           +-------> Plan Next Update
+```
+
+**Note:** In continuous deployment, the approval step can be automated or omitted after all required checks pass. In continuous delivery, production release normally waits for an authorized release decision.
+
+## 7. Example Scenario: Adding a Discount Coupon Feature
+
+Suppose the company wants to add a discount coupon feature to its online shopping application.
+
+1. A developer writes the coupon feature and commits the code to the Git repository.
+2. The developer pushes the change and opens a pull request.
+3. The CI pipeline starts automatically.
+4. The build stage creates the application package.
+5. Unit tests check whether coupon discounts are calculated correctly.
+6. Integration tests check whether the coupon works with the shopping cart and checkout process.
+7. If all tests pass, the application is deployed to staging for verification.
+8. After approval, the new version is deployed to production.
+9. The team monitors checkout errors and application performance after release.
+
+If a test fails, the pipeline reports the problem so the developer can correct it before the change reaches customers.
+
+## 8. Benefits of DevOps and Automation
+
+1. **Faster software delivery:** Automated build, testing, and deployment reduce the time required to release new features and bug fixes.
+2. **Improved software quality:** Automated tests detect defects early and help prevent existing features from breaking.
+3. **Fewer manual errors and better collaboration:** Repeatable pipeline steps reduce human mistakes, while developers and operations staff share feedback and responsibility.
+
+## 9. Development and Implementation Challenges
+
+1. **Initial setup and learning:** Selecting CI/CD tools, creating pipelines, and training team members require time and effort.
+2. **Test automation effort:** Automated tests must be written and maintained. Poor or incomplete tests may fail to detect important problems.
+3. **Security and configuration management:** Repository credentials, API keys, deployment permissions, and environment settings must be protected. Secrets should be stored securely rather than committed to source code.
+
+## 10. Conclusion
+
+DevOps practices and a CI/CD pipeline can improve the development and release process of the online shopping application. Continuous Integration automatically builds and tests frequent code changes, while Continuous Delivery or Continuous Deployment helps prepare and release verified updates. The pipeline makes software delivery faster, improves quality, reduces manual errors, and supports better teamwork. Although initial setup, test maintenance, and security require attention, automation provides a more consistent and reliable way to develop and deploy the shopping application.
+
+---
+
+## GitHub Contribution Details
+
+**Required folder:** `contributions/`  
+**Filename format in the assignment:** `USN_DevOps_CICD.md`  
+**Filename with your USN:** `NB25CSE009_DevOps_CICD.md`  
+**Suggested commit message:** `Added DevOps CI/CD contribution`  
+**Suggested Pull Request title:** `Student Contribution – DevOps and CI/CD`
+
+Add this Markdown file inside the `contributions` folder of your forked faculty repository, commit it to your fork, and submit a Pull Request to the faculty repository. Copy the Pull Request URL as submission evidence.
