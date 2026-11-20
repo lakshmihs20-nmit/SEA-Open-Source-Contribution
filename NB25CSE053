@@ -1,0 +1,73 @@
+### Case Study: Open-Source Software Engineering
+
+Title: Improving Documentation of a Library Management System
+
+### 1\. Introduction
+
+Open-source software is software whose source code is available for everyone to use, study, and improve. GitHub is a platform used by developers to share and improve software projects.
+
+### 2\. Problem Analysis
+
+A group of developers is developing a Library Management System on GitHub. The project does not have proper documentation explaining how to issue and return books. Users may face difficulties using the system.
+
+### 3\. Proposed Solution
+
+A student can solve this problem by contributing documentation to the project.
+
+Steps involved:
+
+* Open GitHub and log in.
+
+* Open the faculty repository.
+
+* Click on Fork to create a copy.
+
+* Open the contributions folder.
+
+* Create a new file named `USN_Open_Source_Contribution.md`.
+
+* Write documentation about issuing and returning books.
+
+* Commit the changes.
+
+* Create a Pull Request.
+
+* The faculty checks and merges the changes.
+
+### 4\. Benefits
+
+* Improves project documentation.
+
+* Helps users understand the system.
+
+* Encourages teamwork.
+
+* Improves programming and collaboration skills.
+
+### 5\. Challenges
+
+* Understanding the existing project.
+
+* Writing correct and clear documentation.
+
+* Getting approval for the changes.
+
+### 6\. Conclusion
+
+Open-source contribution helps developers work together and improve software. By using GitHub, students can contribute documentation and make the Library Management System easier to use.
+
+### GitHub Workflow Diagram
+
+Faculty creates repository
+
+Student forks repository
+
+Creates documentation file
+
+Commits changes
+
+Submits Pull Request
+
+Faculty reviews and merges
+
+This is Case Study 4 from your Unit 5 question bank. You can copy this into your assignment.
