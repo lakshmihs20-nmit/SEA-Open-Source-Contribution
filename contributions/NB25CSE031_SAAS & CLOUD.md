@@ -1,0 +1,173 @@
+# Cloud-Based Attendance Management System
+
+## Case Study 1: SaaS and Cloud-Based Applications
+
+### 1. Student Details
+
+  Field                     Details
+  ------------------------- ------------------------------------------
+  **Name**                  Amlan Ashish Routray
+  **USN**                   NB25CSE031
+  **Assigned Case Study**   SaaS and Cloud-Based Applications
+  **Project**               Cloud-Based Attendance Management System
+
+------------------------------------------------------------------------
+
+### 2. Introduction
+
+Software as a Service (SaaS) is a cloud computing model in which
+software applications are provided to users over the internet.
+
+Users can access SaaS applications through web browsers without
+installing or maintaining software on their computers.
+
+A **Cloud-Based Attendance Management System** allows faculty members to
+record, manage and monitor student attendance from anywhere.
+
+It replaces traditional attendance registers and Excel sheets with a
+centralized online system.
+
+### 3. Problem Analysis
+
+Currently, colleges maintain student attendance records manually using
+registers and Excel sheets. This traditional method creates several
+problems:
+
+1.  Maintaining attendance records manually consumes time.
+2.  Faculty members may face difficulties accessing records from
+    different locations.
+3.  Manual calculations can lead to errors.
+4.  Updating and managing attendance records becomes difficult.
+5.  Students may not receive timely information about their attendance.
+
+Therefore, the college needs a cloud-based attendance management system
+that provides easy access, accurate records and centralized data
+management.
+
+### 4. Proposed Solution
+
+The proposed solution is to develop a **Cloud-Based Attendance
+Management System using SaaS**.
+
+The system will be hosted on cloud servers, allowing faculty members and
+students to access attendance information through the internet.
+
+#### A. Essential Features
+
+**1. User Authentication**
+
+Faculty members and students can securely log in using their registered
+credentials.
+
+**2. Online Attendance Recording**
+
+Faculty members can mark student attendance digitally for each subject
+and class.
+
+**3. Attendance Report Generation**
+
+The system automatically calculates attendance percentages and generates
+reports.
+
+**4. Student Attendance Monitoring**
+
+Students can view their attendance records and identify attendance
+shortages.
+
+**5. Centralized Cloud Storage**
+
+All attendance records are stored in a centralized cloud database and
+can be accessed when required.
+
+#### B. Benefits of Cloud-Based Applications
+
+**1. Anywhere Accessibility**
+
+Faculty members can access attendance records from anywhere using an
+internet-connected device.
+
+**2. Reduced Maintenance**
+
+The college does not need to maintain its own physical servers because
+the cloud service provider manages the infrastructure.
+
+**3. Data Backup and Scalability**
+
+Cloud storage supports data backup and allows the system to handle
+increasing numbers of students and records.
+
+#### C. Simple Architecture Diagram
+
+``` text
+       Faculty / Students
+               |
+               v
+        Web Browser
+               |
+               v
+      Internet Connection
+               |
+               v
+       Cloud Application
+               |
+               v
+       Application Server
+               |
+               v
+        Cloud Database
+               |
+               v
+     Attendance Records
+               |
+               v
+       Reports and Results
+```
+
+### 5. Benefits and Challenges
+
+#### A. Benefits
+
+1.  **Time Saving:** Digital attendance reduces the time required for
+    manual record maintenance.
+2.  **Easy Accessibility:** Faculty members and students can access
+    attendance information from anywhere.
+3.  **Improved Accuracy:** Automatic attendance calculations reduce
+    human errors.
+
+#### B. Challenges
+
+**1. Internet Dependency**
+
+The system requires a stable internet connection. Poor connectivity may
+prevent faculty members from recording or accessing attendance.
+
+**2. Data Security and Privacy**
+
+Student attendance records are sensitive institutional information. The
+system must provide secure authentication, access control and data
+protection to prevent unauthorized access.
+
+### 6. Conclusion
+
+The Cloud-Based Attendance Management System using SaaS provides an
+efficient alternative to traditional attendance management methods.
+
+It allows faculty members to record attendance digitally and enables
+students to monitor their attendance from anywhere.
+
+By providing centralized storage, easy accessibility and automatic
+report generation, the proposed system improves accuracy and reduces
+manual work.
+
+Therefore, implementing a SaaS-based attendance management system can
+make college attendance management more efficient and reliable.
+
+------------------------------------------------------------------------
+
+## GitHub Submission Details
+
+-   **GitHub Filename:** `USN_SaaS_Attendance_System.md`
+-   **Commit Message:**
+    `Added SaaS Attendance Management System contribution`
+-   **Pull Request Title:**
+    `Student Contribution – SaaS Attendance System`
