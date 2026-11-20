@@ -1,0 +1,333 @@
+CASE STUDY 1: ONLINE FOOD DELIVERY SYSTEM
+
+TEST PLAN
+
+1. Introduction
+
+An Online Food Delivery System is a web or mobile application that allows customers to order food from different restaurants through the internet. Customers can register, log in, search for restaurants, view food menus, add food items to the cart, place orders, make online payments and track their orders.
+
+The main purpose of this system is to make food ordering easy, fast and convenient for customers. Testing is performed to ensure that all the functions work correctly and provide a smooth user experience.
+
+2. Objectives
+
+The main objectives of testing the Online Food Delivery System are:
+
+1. To check whether customers can register and log in successfully.
+
+
+2. To verify that restaurant searches work correctly.
+
+
+3. To ensure that customers can view and select food items.
+
+
+4. To check whether food items can be added to and removed from the cart.
+
+
+5. To verify that customers can place orders successfully.
+
+
+6. To check whether online payments work correctly.
+
+
+7. To ensure that customers can track their food orders.
+
+
+8. To identify and fix errors in the application.
+
+
+
+3. Scope
+
+The scope of testing includes checking all the important functions of the Online Food Delivery System.
+
+The following modules will be tested:
+
+Customer Login: Checking customer login using valid and invalid details.
+
+Restaurant Search: Checking whether customers can search for restaurants.
+
+Menu Selection: Checking whether customers can view menus and select food items.
+
+Cart: Checking whether customers can add, remove and update food items.
+
+Order Placement: Checking whether customers can place food orders.
+
+Payment: Checking whether online payments are successful.
+
+Order Tracking: Checking whether customers can track their order status.
+
+
+4. Testing Approach
+
+Testing is performed using different testing methods to ensure that the application works properly.
+
+1. Unit Testing: Testing individual modules such as login, search and cart separately.
+
+
+2. Integration Testing: Checking whether different modules work together correctly.
+
+
+3. System Testing: Testing the complete food delivery application.
+
+
+4. Functional Testing: Checking whether all functions work according to the requirements.
+
+
+5. Usability Testing: Checking whether the application is easy to use.
+
+
+6. Performance Testing: Checking whether the application responds quickly when many users access it.
+
+
+
+5. Features to be Tested
+
+The following features are tested in the Online Food Delivery System:
+
+1. Customer Login
+
+Check login with valid username and password.
+
+Check login with incorrect details.
+
+Check whether error messages are displayed.
+
+
+2. Restaurant Search
+
+Check whether customers can search for restaurants.
+
+Check whether correct restaurant details are displayed.
+
+Check what happens when no restaurant is available.
+
+
+3. Menu Selection
+
+Check whether food items are displayed correctly.
+
+Check whether customers can select food items.
+
+Check whether food prices are correct.
+
+
+4. Cart
+
+Check whether customers can add food items to the cart.
+
+Check whether customers can remove items.
+
+Check whether the total price is calculated correctly.
+
+
+5. Order Placement
+
+Check whether customers can place orders successfully.
+
+Check whether order details are saved correctly.
+
+Check whether order confirmation is displayed.
+
+
+6. Payment
+
+Check whether online payments are successful.
+
+Check how the system handles failed payments.
+
+Check whether payment confirmation is displayed.
+
+
+7. Order Tracking
+
+Check whether customers can view order status.
+
+Check whether order details are updated correctly.
+
+Check whether customers can track their delivery.
+
+
+6. Sample Test Cases
+
+Test cases are prepared to check whether each function of the application works correctly.
+
+Test Case ID	Test Scenario	Expected Result
+
+TC01	Login with valid details	Login should be successful.
+TC02	Login with invalid password	Error message should be displayed.
+TC03	Search for a restaurant	Matching restaurants should be displayed.
+TC04	Select a food item	Selected food should be displayed.
+TC05	Add food to cart	Food item should be added to the cart.
+TC06	Remove food from cart	Food item should be removed.
+TC07	Place an order	Order should be placed successfully.
+TC08	Make online payment	Payment should be completed successfully.
+TC09	Payment failure	Failure message should be displayed.
+TC10	Track an order	Current order status should be displayed.
+
+
+7. Test Environment
+
+The test environment includes the hardware and software required to test the application.
+
+Hardware Requirements:
+
+Computer or laptop.
+
+Smartphone.
+
+Internet connection.
+
+Server system.
+
+
+Software Requirements:
+
+Operating system such as Windows or Android.
+
+Web browser such as Chrome.
+
+Online Food Delivery Application.
+
+Database for storing customer and order details.
+
+Payment testing environment.
+
+
+8. Roles and Responsibilities
+
+Different team members are responsible for testing the application.
+
+1. Test Manager: Plans and manages the testing activities.
+
+
+2. Test Engineer: Prepares and executes test cases.
+
+
+3. Developer: Identifies and fixes software errors.
+
+
+4. Database Administrator: Checks database operations and stored information.
+
+
+5. Project Manager: Monitors the project and ensures that testing is completed on time.
+
+
+
+9. Testing Schedule
+
+The testing activities are planned according to the following schedule.
+
+Activities	Duration
+
+Test Planning	2 Days
+Test Case Preparation	2 Days
+Unit Testing	2 Days
+Integration Testing	3 Days
+System Testing	3 Days
+Bug Fixing	2 Days
+Final Testing	1 Day
+
+
+Total Duration: 15 Days
+
+10. Entry Criteria
+
+Entry criteria are the conditions that must be completed before testing starts.
+
+1. All application requirements should be available.
+
+
+2. The application should be developed.
+
+
+3. The testing environment should be ready.
+
+
+4. Test cases should be prepared.
+
+
+5. Required test data should be available.
+
+
+
+11. Exit Criteria
+
+Exit criteria are the conditions that must be satisfied before testing is completed.
+
+1. All planned test cases should be executed.
+
+
+2. All important functions should work correctly.
+
+
+3. Critical errors should be fixed.
+
+
+4. Test results should be documented.
+
+
+5. The application should meet the required quality standards.
+
+
+
+12. Risks
+
+Some risks may occur during the testing of the application.
+
+1. Internet Failure: Poor internet connection may interrupt testing.
+
+
+2. Payment Failure: Online payment may fail due to technical problems.
+
+
+3. Server Failure: The application may stop working if the server is down.
+
+
+4. Incorrect Data: Wrong food prices or restaurant details may be displayed.
+
+
+5. Security Issues: Customer information and payment details may be at risk.
+
+
+6. Performance Issues: The application may become slow when many users access it.
+
+
+
+13. Test Deliverables
+
+Test deliverables are the documents and reports produced during the testing process.
+
+1. Test Plan Document.
+
+
+2. Test Case Document.
+
+
+3. Test Execution Report.
+
+
+4. Bug Report.
+
+
+5. Test Summary Report.
+
+
+6. Final Testing Report.
+
+
+
+These documents help the team understand the testing process and application quality.
+
+14. Conclusion
+
+The Online Food Delivery System makes ordering food easy and convenient for customers. Testing is important to ensure that all the application functions work correctly. The testing process checks customer login, restaurant search, menu selection, cart, order placement, payment and order tracking.
+
+By performing proper testing, errors can be identified and corrected. It also improves the performance, security, reliability and quality of the application. Finally, the system provides a smooth and user-friendly experience for customers.
+
+
+---
+
+This covers all 14 points listed in your PDF for Case Study 1: Online Food Delivery System. 
+
+You can use this directly for your assignment.
