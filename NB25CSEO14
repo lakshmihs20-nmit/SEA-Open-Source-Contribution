@@ -1,0 +1,10 @@
+6. Simple Architecture Diagram
+Users
+Faculty | Students | Admin
+Internet / Web Browser
+SaaS Cloud Application
+Login | Attendance | Reports | Notifications
+Cloud Database
+Student and Attendance Records
+7. Conclusion
+The SaaS-based attendance management system helps colleges maintain student attendance digitally. It reduces paperwork, saves time, improves accuracy and provides easy access to attendance records. Although internet dependency and data security are challenges, SaaS is an efficient and reliable solution for modern educational institutions.
